@@ -21,7 +21,7 @@ async function main() {
   await fs.remove(".git");
   console.log(".git folder removed.");
 
-  // Step 2: Initialize a new Git repository
+  // Step 2: Initialize a new Git repository.
   const git = simpleGit();
   await git.init();
   console.log("Initialized a new git repository.");
@@ -123,6 +123,7 @@ async function main() {
         variable: "AUTH0_ISSUER_BASE_URL",
         value: `https://${variableBucket[0].value}`,
       });
+      envContent += `AUTH0_ISSUER_BASE_URL=${AUTH0_SECRET}\n`;
     }
 
     console.log("Setting Git Secrets...");
@@ -151,6 +152,7 @@ async function main() {
     { variable: "VERCEL_TOKEN", value: "" },
     { variable: "NEON_PROJECT_ID", value: "" },
     { variable: "NEON_API_KEY", value: "" },
+    { variable: "NEON_DATABASE_NAME", value: "" },
   ];
 
   const hasuraVariables = [{ variable: "HASURA_ADMIN_SECRET", value: "" }];
