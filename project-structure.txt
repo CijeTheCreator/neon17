@@ -1,0 +1,54 @@
+.env
+.eslintignore
+.eslintrc.json
+.github/
+  workflows/
+    cleanup-preview.yml
+    deploy-preview.yml
+    deploy-production.yml
+.gitignore
+.husky/
+  _/
+    .gitignore
+    husky.sh
+  pre-commit
+.prettierignore
+.prettierrc
+.vscode/
+  extensions.json
+  settings.json
+README.md
+docker-compose.yml
+eslint.config.mjs
+jest.config.js
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+pages/
+  _app.tsx
+  _document.tsx
+  api/
+    auth/
+      [auth0].ts
+    hello.ts
+  index.tsx
+postcss.config.js
+prisma/
+  schema.prisma
+project_st.js
+public/
+  favicon.ico
+  next.svg
+  vercel.svg
+quickstart.js
+server/
+  __tests__/
+    app.test.ts
+  app.ts
+  routes.ts
+  tsconfig.json
+styles/
+  globals.css
+tailwind.config.js
+tsconfig.json
