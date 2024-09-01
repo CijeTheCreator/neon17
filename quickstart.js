@@ -21,7 +21,7 @@ async function main() {
   await fs.remove(".git");
   console.log(".git folder removed.");
 
-  // Step 2: Initialize a new Git repository
+  // Step 2: Initialize a new Git repository.
   const git = simpleGit();
   await git.init();
   console.log("Initialized a new git repository.");
