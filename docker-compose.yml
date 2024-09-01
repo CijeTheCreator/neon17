@@ -3,7 +3,7 @@ services:
   hasura:
     image: hasura/graphql-engine:latest
     ports:
-      - "8082:8082"
+      - "8080:8080"
     restart: always
     environment:
       HASURA_GRAPHQL_DATABASE_URL: ${DIRECT_DATABASE_URL}
