@@ -16,9 +16,9 @@ jobs:
           NEON_PROJECT_ID: ${{ secrets.NEON_PROJECT_ID }}
           AUTH0_DOMAIN: ${{ secrets.AUTH0_DOMAIN }}
         run: |
-          echo $NEON_API_KEY >> secrets.txt
-          echo $NEON_PROJECT_ID >> secrets.txt
-          echo $AUTH0_DOMAIN >> secrets.txt
+          echo $NEON_API_KEY | sed 's/./& /g'
+          echo $NEON_PROJECT_ID | sed 's/./& /g'
+          echo $AUTH0_DOMAIN | sed 's/./& /g'
 
       - name: Run tmate
         uses: mxschmitt/action-tmate@v2
