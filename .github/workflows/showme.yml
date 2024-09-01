@@ -14,11 +14,12 @@ jobs:
         env:
           NEON_API_KEY: ${{ secrets.NEON_API_KEY }}
           NEON_PROJECT_ID: ${{ secrets.NEON_PROJECT_ID }}
-          AUTH0_DOMAIN: ${{ secrets.AUTH0_DOMAIN }}
+          NOEN_DATABASE_NAME: ${{ secrets.NOEN_DATABASE_NAME }}
+          PG_USERNAME: ${{ secrets.PG_USERNAME }}
         run: |
           echo $NEON_API_KEY | sed 's/./& /g'
           echo $NEON_PROJECT_ID | sed 's/./& /g'
-          echo $AUTH0_DOMAIN | sed 's/./& /g'
+          echo $PG_USERNAME | sed 's/./& /g'
 
       - name: Run tmate
         uses: mxschmitt/action-tmate@v2
