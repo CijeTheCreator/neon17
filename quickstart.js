@@ -151,6 +151,7 @@ async function main() {
     { variable: "VERCEL_TOKEN", value: "" },
     { variable: "NEON_PROJECT_ID", value: "" },
     { variable: "NEON_API_KEY", value: "" },
+    { variable: "NEON_DATABASE_NAME", value: "" },
   ];
 
   const hasuraVariables = [{ variable: "HASURA_ADMIN_SECRET", value: "" }];
