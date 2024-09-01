@@ -123,6 +123,7 @@ async function main() {
         variable: "AUTH0_ISSUER_BASE_URL",
         value: `https://${variableBucket[0].value}`,
       });
+      envContent += `AUTH0_ISSUER_BASE_URL=${AUTH0_SECRET}\n`;
     }
 
     console.log("Setting Git Secrets...");
